@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<superClipboard>
+    <item>
+        <content>Tap the item to copy content</content>
+        <countOfCopy>1</countOfCopy>
+        <editTime>Sat, 03 May 2014 12:56:42 GMT</editTime>
+    </item>
+    <item>
+        <content>Double tap the item to edit content</content>
+        <countOfCopy>0</countOfCopy>
+        <editTime>Sat, 03 May 2014 12:56:44 GMT</editTime>
+    </item>
+    <item>
+        <content>&quot;create&quot; to create a new item</content>
+        <countOfCopy>0</countOfCopy>
+        <editTime>Sat, 03 May 2014 12:56:45 GMT</editTime>
+    </item>
+    <item>
+        <content>&quot;add&quot; to add an item with system clipboard's content</content>
+        <countOfCopy>0</countOfCopy>
+        <editTime>Sat, 03 May 2014 12:56:47 GMT</editTime>
+    </item>
+</superClipboard>

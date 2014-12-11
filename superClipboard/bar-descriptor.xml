@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--
+
+   Copyright (c) 2011-2013 BlackBerry Limited.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+-->
+<qnx xmlns="http://www.qnx.com/schemas/application/1.0">
+
+<!-- BlackBerry 10 application descriptor file.
+
+    Specifies parameters for identifying, installing, and launching native applications on BlackBerry 10.
+
+-->
+
+    <!-- A universally unique application identifier. Must be unique across all BlackBerry 10 applications.
+         Using a reverse DNS-style name as the id is recommended. (Eg. com.example.ExampleApplication.) Required. -->
+    <id>com.lemming.superClipboard</id>
+
+    <!-- The name that is displayed in the BlackBerry 10 application installer.
+         May have multiple values for each language. See samples or xsd schema file. Optional. -->
+    <name>
+       superClipboard
+       <text xml:lang="zh-CN">&#x8d85;&#x7ea7;&#x526a;&#x8d34;&#x677f;</text>
+    </name>
+
+    <!-- A string value of the format <0-999>.<0-999>.<0-999> that represents application version which can be used to check for application upgrade.
+         Values can also be 1-part or 2-part. It is not necessary to have a 3-part value.
+         An updated version of application must have a versionNumber value higher than the previous version. Required. -->
+    <versionNumber>0.5.1</versionNumber>
+    <packageLocale>zh-CN</packageLocale>
+
+    <!-- Fourth digit segment of the package version. First three segments are taken from the
+         <versionNumber> element.  Must be an integer from 0 to 2^16-1 -->
+    <buildId>1</buildId>
+
+    <!-- A string value (such as "v1", "2.5", or "Alpha 1") that represents the version of the application, as it should be shown to users. Optional. -->
+    <!-- <versionLabel></versionLabel> -->
+
+    <!-- Description, displayed in the BlackBerry 10 application installer.
+         May have multiple values for each language. See samples or xsd schema file. Optional. -->
+
+    <!-- Copyright information. Optional. -->
+    <!-- <copyright></copyright> -->
+
+    <!--  Name of author which is used for signing. Must match the developer name of your development certificate. -->
+    <author>lemming</author>
+    <authorId>gYAAgNvNeobM-mBT8M0QnaW1hAw</authorId>
+    <description>
+       superClipboard is a simple and fast BlackBerry clipboard enhancement software, use it, you can copy the content to the clipboard multiple to quickly begin editing.
+       <text xml:lang="zh-CN">&#x8d85;&#x7ea7;&#x526a;&#x8d34;&#x677f;&#x662f;&#x4e00;&#x6b3e;&#x7b80;&#x5355;&#x8fc5;&#x901f;&#x7684;&#x9ed1;&#x8393;&#x526a;&#x8d34;&#x677f;&#x589e;&#x5f3a;&#x8f6f;&#x4ef6;&#xff0c;&#x5229;&#x7528;&#x5b83;&#xff0c;&#x4f60;&#x53ef;&#x4ee5;&#x590d;&#x5236;&#x591a;&#x4e2a;&#x5185;&#x5bb9;&#x5230;&#x526a;&#x8d34;&#x677f;&#x4e0a;&#xff0c;&#x4ece;&#x800c;&#x5feb;&#x901f;&#x5f00;&#x59cb;&#x7f16;&#x8f91;&#x5de5;&#x4f5c;&#x3002;&#xD;
+&#x8d85;&#x7ea7;&#x526a;&#x8d34;&#x677f;&#x80fd;&#x591f;&#x8ba9;&#x4f60;&#x590d;&#x5236;&#x3001;&#x7f16;&#x8f91;&#x3001;&#x5220;&#x9664;&#x4efb;&#x4f55;&#x526a;&#x8d34;&#x677f;&#x5185;&#x5bb9;&#x3002;&#xD;
+&#xD;
+&#x65b9;&#x4fbf;&#x7684;&#x64cd;&#x4f5c;&#xff1a;&#xD;
+- &#x5355;&#x51fb;&#x5c06;&#x5185;&#x5bb9;&#x590d;&#x5236;&#x5230;&#x7cfb;&#x7edf;&#x526a;&#x8d34;&#x677f;&#xff1b;&#xD;
+- &#x53cc;&#x51fb;&#x5feb;&#x901f;&#x7f16;&#x8f91;&#x5185;&#x5bb9;&#xff1b;&#xD;
+- &#x521b;&#x5efa;&#x64cd;&#x4f5c;&#xff0c;&#x521b;&#x5efa;&#x65b0;&#x7684;&#x5185;&#x5bb9;&#x9879;&#xff1b;&#xD;
+- &#x6dfb;&#x52a0;&#x64cd;&#x4f5c;&#xff0c;&#x4ee5;&#x7cfb;&#x7edf;&#x526a;&#x8d34;&#x677f;&#x4e2d;&#x7684;&#x5185;&#x5bb9;&#x521b;&#x5efa;&#x65b0;&#x7684;&#x5185;&#x5bb9;&#x9879;&#x3002;&#xD;
+&#xD;
+&#x8f6f;&#x4ef6;&#x529f;&#x80fd;&#xff1a;&#xD;
+- &#x5b58;&#x50a8;&#x526a;&#x8d34;&#x677f;&#x5185;&#x5bb9;&#x548c;&#x7247;&#x6bb5;&#xff1b;&#xD;
+- &#x8f6f;&#x4ef6;&#x7f29;&#x7565;&#x56fe;&#x5b9e;&#x65f6;&#x663e;&#x793a;&#x7cfb;&#x7edf;&#x526a;&#x8d34;&#x677f;&#x5185;&#x5bb9;&#xff1b;&#xD;
+- &#x5c06;&#x6570;&#x636e;&#x5907;&#x4efd;&#x5230;XML&#x6587;&#x4ef6;&#xff1b;&#xD;
+- &#x4ece;XML&#x6587;&#x4ef6;&#x5bfc;&#x5165;&#x6570;&#x636e;&#x3002;</text>
+    </description>
+    <configuration name="Device-Debug">
+       <platformArchitecture>armle-v7</platformArchitecture>
+       <asset path="arm/o.le-v7-g/superClipboard" entry="true" type="Qnx/Elf">superClipboard</asset>
+    </configuration>
+    <configuration name="Device-Release">
+       <entryPointType>Qnx/Cascades</entryPointType>
+       <platformArchitecture>armle-v7</platformArchitecture>
+       <asset path="arm/o.le-v7/superClipboard.so" entry="true" type="Qnx/Elf">superClipboard.so</asset>
+    </configuration>
+    <configuration name="Device-Profile">
+       <platformArchitecture>armle-v7</platformArchitecture>
+       <asset path="arm-p/o.le-v7-g/superClipboard" entry="true" type="Qnx/Elf">superClipboard</asset>
+    </configuration>
+    <configuration name="Simulator-Debug">
+       <platformArchitecture>x86</platformArchitecture>
+       <asset path="x86/o-g/superClipboard" entry="true" type="Qnx/Elf">superClipboard</asset>
+    </configuration>
+
+    <!--  Unique author ID assigned by signing authority. Required if using debug tokens. -->
+    <!-- <authorId>ABC1234YjsnUk235h</authorId> -->
+
+    <initialWindow>
+        <autoOrients>true</autoOrients>
+        <systemChrome>none</systemChrome>
+        <transparent>false</transparent>
+    </initialWindow>
+
+    <!--  The icon for the application, which should be 114x114. -->
+    <icon>
+        <image>icon.png</image>
+    </icon>
+
+    <asset path="icon.png">icon.png</asset>
+    <asset path="assets">assets</asset>
+
+    <!-- Locale support -->
+    <asset path="translations" dest="qm">
+        <include name="*.qm"/>
+    </asset>
+
+    <!-- Request permission to execute native code.  Required for native applications. -->
+    <permission system="true">run_native</permission>
+    <permission>access_shared</permission>
+    <env var="LD_LIBRARY_PATH" value="app/native/lib:/usr/lib/qt4/lib"/>
+
+</qnx>
